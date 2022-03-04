@@ -1,0 +1,257 @@
+.banner{
+    background: url(../src/62685.png);
+    min-height: 530px;
+    position:static;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoSansCond-500','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body{
+    
+    background: url(../src/fondo-lineup.png)
+}
+/* el menu */
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(39, 37, 37);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.img-banner{
+    float: left;
+    max-width: 5%;
+    max-height: 5%;
+    margin: 6px 0;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9) ;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#menu-bar{
+    display: none;
+}
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+header label{
+    float: right;
+    height: 30%;
+    margin: 6px 0;
+    cursor: pointer;
+}
+header .contenedor{
+    display: table;
+} 
+/* empieza el la descripcion del evento aqui */
+#bienvenidos{
+    text-align: center;
+    color: #fff;
+}
+.flex-bienvenida{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #202020;
+    
+}
+.flex-bienvenida div{
+    text-align: left;
+    
+}
+.flex-contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 200px;
+    
+}
+.flex-contenedor div{
+    width: 300px;
+    justify-content: center;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(77, 27, 124);
+}
+.participar{
+    color: #fff;
+    margin: 0 0 20px 0;
+    background: #6abf4b;
+}
+.colorhoratio{
+    color: yellow;
+    font-size: 24px;
+}
+.titulo2{
+    margin: 45px;
+    top: 50%;
+    color: greenyellow;
+}
+/* programacion */
+.programacion{
+    background-color: #202020;
+    text-align: center;
+}
+.flex-programacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+}
+.flex-programacion div{
+    background-color: orange;
+    width: 135px;
+    height: 130px;
+    margin: 0;
+    text-align: center;
+    line-height: 10px;
+    border: 2px solid black;
+}
+
+.flex-p{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.titulop div{
+    background-color: orange;
+    width: 1000px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    line-height: 10px;
+    border: 2px solid black;
+}´
+.titulop{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 18px;
+}
+.colorp{
+    color: #fff;
+}
+/* lista musica */
+.flex-musica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px;
+}
+.flex-musica div{
+   
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+    line-height: 10px;
+    border: 2px solid black;
+}
+.boletas{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: #621ed1;
+    padding: 10px 25px;
+    margin-bottom: 25px;
+    line-height: .8;
+}
+.boletas table{
+    margin: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    font-size: 18px;
+    width: 450px;
+    
+}
+.colort{
+    color: #621ed1;
+    background-color: #6abf4b;
+}
+.reserva{
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+.flex-patrocinio{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    
+}
+.flex-patrocinio div{
+    width: 100px;
+    justify-content: center;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+footer{
+    background-color: #fff;
+}
+footer .contenedorf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.copy{
+    font-size: 20px;
+}
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+footer img{
+    justify-content: left;
+}
