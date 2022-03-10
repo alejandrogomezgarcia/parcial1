@@ -40,32 +40,31 @@ header{
     width: 98%;
     margin: auto;
 }
-.menu{
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 30%;
-    height: 100vh;
-    background: rgba(51, 51, 51, 0.9) ;
-    transition: all 0.5s;
-    transform: translateX(-100%);
-}
-.menu a{
+.menu li a{
     display: block;
-    color: #fff;
-    height: 50px;
+    padding: 15px 20px;
+    color: white;
     text-decoration: none;
-    padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.menu a:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+.menu li{
+    border-left: 1px solid #fff;
 }
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+.menu li:hover{
+    background: rgba(0, 0, 0, 3);
+}
+
 #menu-bar{
-    display: none;
+   display: none;
 }
 #menu-bar:checked ~ .menu{
-    transform: translateX(0%);
+    
 }
 header label{
     float: right;
@@ -81,6 +80,10 @@ header .contenedor{
     text-align: center;
     color: #fff;
 }
+.participar{
+    padding: 0px 20px;
+
+}
 .flex-bienvenida{
     display: flex;
     justify-content: space-around;
@@ -93,27 +96,26 @@ header .contenedor{
     text-align: left;
     
 }
+
 .flex-contenedor{
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    height: 200px;
-    
-}
-.flex-contenedor div{
-    width: 300px;
-    justify-content: center;
-    margin: 10px;
-    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: yellow;
+    max-height: 268vh;
+    background-color: rgb(35, 92, 197);
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    border: 2px solid black;
-    background-color: rgb(77, 27, 124);
+    color: gold;
+    -webkit-text-stroke: 0.5px black;
+
 }
-.participar{
-    color: #fff;
-    margin: 0 0 20px 0;
-    background: #6abf4b;
+.titulo-participacion{
+    color: pink !important;
+    -webkit-text-stroke: 1px black;
 }
+
 .colorhoratio{
     color: yellow;
     font-size: 24px;
@@ -121,6 +123,7 @@ header .contenedor{
 .titulo2{
     margin: 45px;
     top: 50%;
+    text-align: center;
     color: greenyellow;
 }
 /* programacion */
@@ -211,7 +214,7 @@ header .contenedor{
     background-color: #6abf4b;
 }
 .reserva{
-    background-color: white;
+    background-color: rgb(248, 104, 8);
     text-align: center;
     font-size: 18px;
     margin: 0 0 20px 0;
@@ -223,6 +226,9 @@ header .contenedor{
     padding: 10px;
     background-color: white;
     
+}
+.p-bienvenido{
+    padding: 15px;
 }
 .flex-patrocinio div{
     width: 100px;
@@ -254,4 +260,310 @@ footer .contenedorf{
 }
 footer img{
     justify-content: left;
+}
+/*animaciones*/
+/*fila1*/
+.celia1 {
+    position: relative;
+  }
+  
+  .celia1 .celia2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .celia1:hover .celia2 {
+    opacity: 1;
+  }
+  .pink1 {
+    position: relative;
+  }
+  
+  .pink1 .pink2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .pink1:hover .pink2 {
+    opacity: 1;
+  }
+  .king1 {
+    position: relative;
+  }
+  
+  .king1 .king2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .king1:hover .king2 {
+    opacity: 1;
+  }
+  .koven1 {
+    position: relative;
+  }
+  
+  .koven1 .koven2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .koven1:hover .koven2 {
+    opacity: 1;
+  }
+  .david1 {
+    position: relative;
+  }
+  
+  .david1 .david2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .david1:hover .david2 {
+    opacity: 1;
+  }
+  .weather1 {
+    position: relative;
+  }
+  
+  .weather1 .weather2 {
+    position: absolute;  
+    top: 0;  
+    left: 105px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .weather1:hover .weather2 {
+    opacity: 1;
+  }
+  /*fila2*/
+  .talkin1 {
+    position: relative;
+  }
+  
+  .talkin1 .talkin2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .talkin1:hover .talkin2 {
+    opacity: 1;
+  }
+  .prince1 {
+    position: relative;
+  }
+  
+  .prince1 .prince2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .prince1:hover .prince2 {
+    opacity: 1;
+  }
+  .rolling1 {
+    position: relative;
+  }
+  
+  .rolling1 .rolling2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .rolling1:hover .rolling2 {
+    opacity: 1;
+  }
+  .acdc1 {
+    position: relative;
+  }
+  
+  .acdc1 .acdc2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .acdc1:hover .acdc2 {
+    opacity: 1;
+  }
+  .elvis1 {
+    position: relative;
+  }
+  
+  .elvis1 .elvis2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .elvis1:hover .elvis2 {
+    opacity: 1;
+  }
+  /*fila3*/
+  .post1 {
+    position: relative;
+  }
+  
+  .post1 .post2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .post1:hover .post2 {
+    opacity: 1;
+  }
+  .fleet1 {
+    position: relative;
+  }
+  .fleet1 .fleet2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .fleet1:hover .fleet2 {
+    opacity: 1;
+  }
+  .daft1 {
+    position: relative;
+  }
+  .daft1 .daft2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .daft1:hover .daft2 {
+    opacity: 1;
+  }
+  .Iz1 {
+    position: relative;
+  }
+  .Iz1 .Iz2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .Iz1:hover .Iz2 {
+    opacity: 1;
+  }
+  .queen1 {
+    position: relative;
+  }
+  .queen1 .queen2 {
+    position: absolute;  
+    top: 0;  
+    left: 95px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .queen1:hover .queen2 {
+    opacity: 1;
+  }
+  /*animacion banner*/
+  .animacion-banner{
+      width: 700px;
+      height: 300px;
+      border: 3px solid red;
+      margin: auto;
+     
+    background-size: cover;
+    background-position: center;
+
+    animation: banner 10s  infinite;
+    animation-direction: alternate;
+    
+  }
+  @keyframes banner {
+        0% , 30%{
+            background-image: url(../src/backg1.jpg);
+            opacity: 1;
+        }
+        31%,34%{
+            opacity: 0.1;
+        }
+        35%,65%{
+            background-image: url(../src/backg2.png);
+            opacity: 1;
+        }
+        66%, 69%{
+            opacity: 0.1;
+        }
+        70%,100%{
+            background-image: url(../src/backg3.jpg);
+            opacity: 1;
+        }
+}
+/*formulario*/
+form{
+    width: 550px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius:7px ;
+}
+.reserva h1{
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 20px;
+    margin: 0;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 27px;
+    border: none;
+}
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover{
+    cursor:pointer;
 }
