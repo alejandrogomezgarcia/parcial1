@@ -297,19 +297,22 @@
       <input type="number" name="ID" placeholder="Numero Identificacion" required><br>
       <input type="number" name="cantidad" placeholder="Cantidad de personas" min="1" max="100000" step="1" required><br>
       <label for="genre">Que pase desea comprar:</label><br>
-        <label for="GENERAL">GENERAL</label>
-        <input type="radio" name="GENERAL" id="GENERAL">
-        <label for="OASIS">OASIS</label>
-        <input type="radio" name="OASIS" id="OASIS">
-        <label for="PREMIUM">OASIS PREMIUM</label>
-        <input type="radio" name="PREMIUM" id="PREMIUM"><br>
-        <label for="tipo">De que tipo lo desea :</label>
+      
+        <select name="TIPO" id="TIPO">
+          <option value="none"></option>
+          <option value="GENERAL">GENERAL</option>
+          <option value="OASIS">OASIS</option>
+          <option value="OASIS-P">OASIS PREMIUN</option><br>
+        </select>
+        
+        <br><label for="tipo">De que tipo lo desea :</label><br>
         <select name="tipo" id="tipo" required><br>
             <option value="none"></option>
             <option value="DIARIO">DIARIO</option>
             <option value="PREVENTA">PREVENTA</option>
             <option value="NORMAL">PRECIO NORMAL</option><br>
             <input type="submit" value="Enviar" id="boton">
+            </select> 
           </form>
     </section>
     <section class="patrocinadores" id="patrocinadores">

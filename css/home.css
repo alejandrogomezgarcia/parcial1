@@ -224,7 +224,7 @@ header .contenedor{
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(195, 243, 193);
     
 }
 .p-bienvenido{
@@ -551,7 +551,7 @@ form{
     margin-bottom: 20px;
     margin: 0;
 }
-input{
+input,select{
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
